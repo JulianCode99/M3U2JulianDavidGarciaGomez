@@ -120,7 +120,7 @@ var tbController = (function() {
         },
 
         AddNewCard(listIndex) {
-            var newCard = {id: uuidv4(),text: "Agregar Nueva Tarea", members: []};
+            var newCard = {id: uuidv4(),text: "Agregar Nueva Tarea",  members: []};
             for(let item of data.board) {
                 if (item.id === listIndex) {
                     item.tasks.push(newCard);
